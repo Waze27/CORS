@@ -5,15 +5,15 @@
             integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
             crossorigin="anonymous"></script>
 
-</head>
-<body>
-<button id="clickMe">ClickMe</button>
+   </head>
+   <body>
+        <button id="clickMe">ClickMe</button>
 
-<script>
+        <script>
             $("#clickMe").on('click', function(){
                 console.log("Clicked");
                 $.ajax({
-                    url: "http://localhost:8080",
+                    url: "http://localhost:8080/custom",
                     type: "GET",
                     success: function(data){
                         console.log(data);
@@ -24,6 +24,6 @@
                 });
             })
         </script>
-</body>
+    </body>
 </html>
 
